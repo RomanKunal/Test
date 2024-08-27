@@ -1,0 +1,22 @@
+{%load static%}
+<html>
+    <head>
+        <title>Products_Akshira</title>
+    </head>
+    <body>
+        <table border='2'>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Type</th>
+                <th>Product Price</th>
+            </tr>
+            {%for i in obj%}
+            <tr>
+                <td>{{i.Product_Name}}</td>
+                <td>{{i.Product_Type}}</td>
+                <td>{{i.Product_Price}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
